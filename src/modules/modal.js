@@ -20,7 +20,6 @@ const modal = () => {
                     modalCallback.style.top = (25 * progress) + '%';
                 }
             });
-            console.log("Hello");
             modalOverlay.style.display = 'block';
             modalCallback.style.display = 'block';
         });
