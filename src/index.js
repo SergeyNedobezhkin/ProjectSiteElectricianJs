@@ -1,2 +1,2 @@
-import script from './modules/script';
-script();
+import modal from './modules/modal';
+modal();
