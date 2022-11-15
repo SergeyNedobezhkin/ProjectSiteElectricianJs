@@ -7,6 +7,7 @@ const modal = () => {
     const callbackBtn = document.querySelectorAll('.callback-btn');
 
     const modalMenu = () => {
+
         callbackBtn.forEach(btn => {
             btn.addEventListener('click', () => {
                 animate({
