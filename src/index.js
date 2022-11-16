@@ -1,2 +1,2 @@
-import modal from './modules/modal';
-modal();
+import modalСall from './modules/modalСall';
+modalСall();
