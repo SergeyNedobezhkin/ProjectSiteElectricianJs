@@ -1,6 +1,6 @@
 "use strict";
 import { animate } from "./helpers";
-const modal = () => {
+const modalСall = () => {
     const modalCallback = document.getElementById('callback');
     const modalOverlay = document.querySelector('.modal-overlay');
     const modalClose = document.querySelector('.modal-close');
@@ -31,4 +31,4 @@ const modal = () => {
     };
     modalMenu();
 };
-export default modal;
+export default modalСall;
