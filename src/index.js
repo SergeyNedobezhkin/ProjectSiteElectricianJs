@@ -1,8 +1,13 @@
 import modal from './modules/modal';
-import slider from './modules/slider';
+import topSlider from './modules/topSlider';
 import modalServices from './modules/modalServices';
+import modalSlades from './modules/swiper';
+import {swiperFunc} from './modules/swiper';
 
 modal();
-slider();
+topSlider();
 modalServices();
+modalSlades();
+swiperFunc();
+
 

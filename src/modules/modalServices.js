@@ -1,13 +1,13 @@
 "use strict";
 import { animate } from "./helpers";
 const modalServices = () => {
-    const buttonServices= document.querySelectorAll('.button-services');
+    const modal= document.querySelectorAll('.button-services');
     const modalCallback = document.getElementById('callback');
     const modalOverlay= document.querySelector('.modal-overlay');
     const modalClose = document.querySelector('.modal-close');
 
-    const modalMenus = () => {
-        buttonServices.forEach(btn => {
+    const modalMenu = () => {
+        modal.forEach(btn => {
             btn.addEventListener('click', () => {
                 animate({
                     duration: 400,
@@ -28,6 +28,6 @@ const modalServices = () => {
             });
         });
     };
-    modalMenus();
+    modalMenu();
 };
 export default modalServices;

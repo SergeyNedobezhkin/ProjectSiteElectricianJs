@@ -4,11 +4,11 @@ const modal = () => {
     const modalCallback = document.getElementById('callback');
     const modalOverlay = document.querySelector('.modal-overlay');
     const modalClose = document.querySelector('.modal-close');
-    const callbackBtn = document.querySelectorAll('.callback-btn');
+    const modal = document.querySelectorAll('.callback-btn');
 
     const modalMenu = () => {
 
-        callbackBtn.forEach(btn => {
+        modal.forEach(btn => {
             btn.addEventListener('click', () => {
                 animate({
                     duration: 400,
