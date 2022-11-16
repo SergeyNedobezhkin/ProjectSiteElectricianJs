@@ -1,4 +1,4 @@
-import modal from './modules/modal';
-import slider from './modules/slider';
-modal();
-slider();
+import modalСall from './modules/modalСall';
+import topSlider from './modules/topSlider';
+modalСall();
+topSlider();

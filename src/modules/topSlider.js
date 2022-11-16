@@ -1,4 +1,4 @@
-const slider = () => {
+const topSlider = () => {
     const tableText = document.querySelectorAll('.table');
     const slides = document.querySelectorAll('.item');
     let currentSlide = 0;
@@ -31,4 +31,4 @@ const slider = () => {
 
     startSlide();
 };
-export default slider;
+export default topSlider;
