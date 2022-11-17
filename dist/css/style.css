@@ -1015,18 +1015,6 @@ hr.white {
 	background: rgba(0, 0, 0, 0.5);
 }
 
-
-.item-relative-active {
-	display: block;
-}
-
-.item-relative-hide {
-	display: none;
-}
-
-
-
-
 .top-slider .table {
 	position: relative;
 	z-index: 10;
