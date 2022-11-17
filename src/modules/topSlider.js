@@ -1,6 +1,7 @@
 const topSlider = () => {
-    const tableText = document.querySelectorAll('.table');
     const slides = document.querySelectorAll('.item');
+
+    const tableText = document.querySelectorAll('.table');
     let currentSlide = 0;
 
     tableText.forEach(item => {
@@ -8,27 +9,29 @@ const topSlider = () => {
     });
 
     const prevSlide = () => {
-        slides[currentSlide].classList.remove('item-relative-active');
-        slides[currentSlide].classList.add('item-relative-hide');
+        slides[currentSlide].style.display = "none";
+
     };
     const nextSlide = () => {
-        slides[currentSlide].classList.add('item-relative-active');
-        slides[currentSlide].classList.remove('item-relative-hide');
+        slides[currentSlide].style.display = "block";
+
     };
 
     const autoSlide = () => {
         prevSlide();
+
         currentSlide++;
         if (currentSlide >= slides.length) {
             currentSlide = 0;
         }
         nextSlide();
-    }; 
+    };
 
     const startSlide = () => {
         setInterval(autoSlide, 3000);
     };
 
     startSlide();
+
 };
 export default topSlider;

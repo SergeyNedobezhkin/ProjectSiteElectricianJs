@@ -858,15 +858,6 @@ hr.white {
 	position: relative;
 }
 
-
-.item-relative-active {
-	display: block;
-}
-
-.item-relative-hide {
-	display: none;
-}
-
 .top-slider .item:before {
 	content: "";
 	display: block;
