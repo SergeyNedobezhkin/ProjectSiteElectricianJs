@@ -3,11 +3,12 @@ import topSlider from './modules/topSlider';
 import modalServices from './modules/modalServices';
 import modalSlades from './modules/swiperServices';
 import {swiperFunc} from './modules/swiperServices';
-
+import faq from './modules/faq';
 modalСall();
 topSlider();
 modalServices();
 modalSlades();
 swiperFunc();
+faq();
 
 
