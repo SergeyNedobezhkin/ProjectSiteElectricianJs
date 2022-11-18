@@ -5,12 +5,15 @@ import modalSlades from './modules/swiperServices';
 import {swiperFunc} from './modules/swiperServices';
 import smoothScrolling from './modules/smoothScrolling';
 import faq from './modules/faq';
+import sendForm from './modules/sendForm';
 modalСall();
 topSlider();
 modalServices();
 modalSlades();
 swiperFunc();
-faq();
 smoothScrolling();
+faq();
+sendForm({formId:'callback'});
+
 
 
