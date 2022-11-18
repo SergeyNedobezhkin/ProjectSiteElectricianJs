@@ -6,6 +6,7 @@ import {swiperFunc} from './modules/swiperServices';
 import smoothScrolling from './modules/smoothScrolling';
 import faq from './modules/faq';
 import sendForm from './modules/sendForm';
+import check from './modules/check';
 modalСall();
 topSlider();
 modalServices();
@@ -13,7 +14,8 @@ modalSlades();
 swiperFunc();
 smoothScrolling();
 faq();
-sendForm({formId:'callback'});
-
+check();
+sendForm('form-callback');
+// sendForm('form-callback');
 
 
