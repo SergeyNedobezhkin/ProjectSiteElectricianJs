@@ -54,7 +54,7 @@ const sendForm = (formName) => {
         });
         return success;
     };
-    // ./#callback/server.php
+
     // Отправленние данных
     const sendData = (data) => {
         return fetch('https://jsonplaceholder.typicode.com/posts', {
