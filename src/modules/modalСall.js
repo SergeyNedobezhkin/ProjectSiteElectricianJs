@@ -1,14 +1,12 @@
 "use strict";
 import { animate } from "./helpers";
 const modalСall = () => {
-    const modalCallback = document.getElementById('callback');
+    const modal = document.querySelector('.modal-callback');
     const modalOverlay = document.querySelector('.modal-overlay');
-    const modalClose = document.querySelector('.modal-close');
-    const modal = document.querySelectorAll('.callback-btn');
+    const modalBtn = document.querySelectorAll('.fancyboxModal');
 
     const modalMenu = () => {
-
-        modal.forEach(btn => {
+        modalBtn.forEach(btn => {
             btn.addEventListener('click', () => {
                 animate({
                     duration: 400,
@@ -16,17 +14,20 @@ const modalСall = () => {
                         return timeFraction;
                     },
                     draw(progress) {
-                        modalCallback.style.left = (50 * progress) + '%';
-                        modalCallback.style.top = (25 * progress) + '%';
+                        modal.style.left = (50 * progress) + '%';
+                        modal.style.top = (25 * progress) + '%';
                     }
                 });
                 modalOverlay.style.display = 'block';
-                modalCallback.style.display = 'block';
+                modal.style.display = 'block';
             });
-            modalClose.addEventListener('click', (e) => {
+        });
+
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target.closest('.modal-overlay') || e.target.classList.contains('.modal-close')) {
                 modalOverlay.style.display = 'none';
-                modalCallback.style.display = 'none';
-            });
+                modal.style.display = 'none';
+            }
         });
     };
     modalMenu();
