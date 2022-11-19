@@ -16,6 +16,6 @@ smoothScrolling();
 faq();
 check();
 sendForm('form-callback');
-// sendForm('form-callback');
+
 
 
