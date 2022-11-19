@@ -1,7 +1,8 @@
+
 "use strict";
 const faq = () => {
-    const accordeons = document.querySelectorAll('.accordeon');
-
+    const accordeons = document.querySelectorAll('.accordeon > .element > .title');
+  
     accordeons.forEach(box => {
         box.addEventListener('click', accordeonHandler);
 
