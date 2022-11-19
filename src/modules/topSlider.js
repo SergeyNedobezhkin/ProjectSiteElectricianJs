@@ -1,3 +1,4 @@
+
 const topSlider = () => {
     const slides = document.querySelectorAll('.item');
     const tableText = document.querySelectorAll('.table');
@@ -30,7 +31,6 @@ const topSlider = () => {
     const startSlide = () => {
         setInterval(autoSlide, 3000);
     };
-
     startSlide();
 
 };
