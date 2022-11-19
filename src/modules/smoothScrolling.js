@@ -1,6 +1,6 @@
 const smoothScroll = () => {
     const goTopBtn = document.querySelector('.up');
-    const topMenu = document.querySelectorAll('.top-menu > ul > li > a[href^="#"');
+    const topMenu = document.querySelectorAll('.top-menu > ul > li > a[href^="#"]');
 
     // Скролл по стрелке
     goTopBtn.style.display = 'none';
